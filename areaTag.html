@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Area Tag</title>
+</head>
+<body>
+   
+    <!-- We use "area tag" inside "map tag" to make clickable a specific area -->
+    
+    <img src="SomeShape.png"  alt="Shape" usemap="#Shape">
+    
+    <map name="Shape">
+        <!-- for Rectangle leftX,upperY,rightX,downY -->
+        <area shape="rect" coords="75,42,189,154" href="index.html" alt="">
+        
+        <!-- for Circle centerX,centerY,radius -->
+        <area shape="circle" coords="342,95,67" href="index.html" alt="">
+
+        <!-- for Triangle upperCornerX,upperCornerY,rightCornerX,rightCornerY,leftCornerX,leftCornerY -->
+        <area shape="poly" coords="89,208,207,291,77,352" href="index.html" alt="">
+       
+     <!--  for Star first take upperCornerX,upperCornerY then take every CornerX,CornerY(both outer corner and inner corner) from maintain your movement in this way 
+           (Upper -> Right -> Down -> Left -> Before Starting Point) -->
+
+        <area shape="poly" coords="354,197,372,252,429,252,383,285,400,339,353,305,306,337,323,285,278,252,335,250" href="index.html" alt="">
+
+    </map>
+    
+</body>
+</html>
