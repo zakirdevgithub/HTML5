@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2>HTML Form</h2>
+    <form action="BackendForm.php">
+
+        <div>
+            <label for="userName">Name</label>
+          <input type="text" name="myName" id="userName">
+        </div>
+        <br>
+
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email" placeholder="abc@mail.com" >
+        </div>
+        <br>
+        
+        <div>
+            <label for="password">password</label>
+             <input type="password" name="myPassword" id="password" >
+        </div>
+        <br>
+
+        <div>
+           Date: <input type="date" name="Date" >
+        </div>
+        <br>
+        <div>
+            Salary: <input type="number" name="salary" >
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender" > Female <input type="radio" name="myGender" > Other <input type="radio" name="myGender">
+        </div>
+        <br>
+
+        <div>
+            I Accept Licence <input type="checkbox" name="Licence" checked>
+        </div>
+        <br>
+        <div>
+            Send User Statistics <input type="checkbox" name="stat" >
+        </div>
+        <br>
+        <div>
+            Comment: <br> <textarea name="comment"  cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <label for="Mobile"> Select your Mobile
+        <select name="SelectMobile" id="Mobile">
+            <option value="samsung">Samsung</option>
+            <option value="Nokia" selected>Nokia</option>
+            <option value="iPhone">iPhone</option>
+        </select>
+      </label>
+        <br>
+        <br>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+        <br>
+        <br>
+        <br>
+  
+        
+    </form>
+
+</body>
+</html>
